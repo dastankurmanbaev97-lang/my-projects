@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мое Портфолио</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #fff5f7 0%, #fce4ec 100%);
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 182, 193, 0.3);
+            transition: transform 0.3s ease;
+        }
+        .glass-card:hover {
+            transform: translateY(-5px);
+        }
+        .btn-pink {
+            background-color: #ff8fa3;
+            transition: all 0.3s ease;
+        }
+        .btn-pink:hover {
+            background-color: #ff758f;
+            box-shadow: 0 4px 15px rgba(255, 117, 143, 0.4);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <nav class="p-6 text-center">
+        <h1 class="text-3xl font-bold text-pink-500 tracking-widest uppercase">My Projects</h1>
+    </nav>
+
+    <main class="max-w-5xl mx-auto px-4 py-10">
+        
+        <section class="text-center mb-16">
+            <div class="inline-block p-2 rounded-full bg-white mb-4 shadow-sm">
+                <img src="https://via.placeholder.com/150" alt="Avatar" class="rounded-full w-32 h-32 object-cover">
+            </div>
+            <h2 class="text-4xl font-extrabold text-pink-600 mb-2">Привет, я [Твое Имя]!</h2>
+            <p class="text-lg text-pink-400">Разработчик / Дизайнер / Творец</p>
+        </section>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="glass-card p-6 rounded-3xl shadow-lg">
+                <div class="h-40 bg-pink-100 rounded-2xl mb-4 flex items-center justify-center">
+                    <span class="text-pink-300 text-5xl">🌸</span>
+                </div>
+                <h3 class="text-xl font-bold text-pink-600 mb-2">Название Проекта</h3>
+                <p class="text-gray-600 text-sm mb-4">Краткое описание твоего крутого проекта. Расскажи, какие технологии ты использовал.</p>
+                <a href="#" class="btn-pink text-white px-6 py-2 rounded-full inline-block text-sm font-semibold">Смотреть</a>
+            </div>
+
+            <div class="glass-card p-6 rounded-3xl shadow-lg">
+                <div class="h-40 bg-pink-100 rounded-2xl mb-4 flex items-center justify-center">
+                    <span class="text-pink-300 text-5xl">✨</span>
+                </div>
+                <h3 class="text-xl font-bold text-pink-600 mb-2">Второй Проект</h3>
+                <p class="text-gray-600 text-sm mb-4">Здесь может быть описание мобильного приложения или веб-сайта.</p>
+                <a href="#" class="btn-pink text-white px-6 py-2 rounded-full inline-block text-sm font-semibold">Смотреть</a>
+            </div>
+
+            <div class="glass-card p-6 rounded-3xl shadow-lg">
+                <div class="h-40 bg-pink-100 rounded-2xl mb-4 flex items-center justify-center">
+                    <span class="text-pink-300 text-5xl">☁️</span>
+                </div>
+                <h3 class="text-xl font-bold text-pink-600 mb-2">Еще одна работа</h3>
+                <p class="text-gray-600 text-sm mb-4">Добавь ссылку на репозиторий или живое демо проекта.</p>
+                <a href="#" class="btn-pink text-white px-6 py-2 rounded-full inline-block text-sm font-semibold">Смотреть</a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="text-center py-10 text-pink-400 text-sm">
+        <p>&copy; 2024 Создано с любовью</p>
+    </footer>
+
+</body>
+</html>
